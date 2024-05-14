@@ -1,0 +1,9 @@
+.root {
+    background-color: #222;
+    padding: 56px 0;
+}
+
+.copyright {
+    composes: text-center text-gray from global;
+    composes: px-16 from global;
+}

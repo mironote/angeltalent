@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "mgmcdermott.vscode-language-babel",
+    "ms-ceintl.vscode-language-pack-zh-hans",
+    "clinyong.vscode-css-modules",
+    "ms-vscode.vscode-typescript-next",
+    "cssho.vscode-svgviewer",
+    "vscode-icons-team.vscode-icons",
+    "esbenp.prettier-vscode"
+  ]
+}

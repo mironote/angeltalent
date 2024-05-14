@@ -1,0 +1,70 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.tabSize": 4,
+    "prettier.configPath": "./prettier.config.js",
+    "files.exclude": {
+        "**/.cache": true,
+        "**/.DS_Store": true,
+        "**/.editorconfig": true,
+        "**/.eslintcache": true,
+        "**/.git": true,
+        "**/.gitattributes": true,
+        "**/.husky": true,
+        "**/.pnp.*": true,
+        "**/yarn.lock": true,
+        "src/node_modules": true
+    },
+    "search.exclude": {
+        "yarn-error.log": true,
+        "yarn.lock": true,
+        "**/.yarn": true,
+        "**/.pnp.*": true
+    },
+    "[svg]": {
+        "editor.defaultFormatter": "jock.svg"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true,
+    "files.associations": {
+        "*.module.css": "tailwindcss"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "tailwindCSS.files.exclude": [
+        "**/.git/**",
+        "**/node_modules/**",
+        "**/.hg/**",
+        "**/.svn/**"
+    ],
+    "css.lint.validProperties": ["composes"],
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "html",
+        "typescriptreact"
+    ]
+}
