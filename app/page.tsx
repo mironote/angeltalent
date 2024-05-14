@@ -2,16 +2,37 @@
 
 import Link from 'next/link'
 import classes from './page.module.css'
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import { useEventListener } from '@/hooks/useEventListener'
+import ImageGallery from 'react-image-gallery'
+import 'react-image-gallery/styles/css/image-gallery.css'
+import { Box, Modal, TextField } from '@mui/material'
 
-const images = [
-    '/images/gallery-1.webp',
-    '/images/gallery-2.webp',
-    '/images/gallery-3.webp',
-    '/images/gallery-4.webp',
-    '/images/gallery-5.webp',
-    '/images/gallery-6.webp',
+const galleryImages = [
+    {
+        original: '/images/gallery/gallery-1-original.webp',
+        thumbnail: '/images/gallery/gallery-1.webp',
+    },
+    {
+        original: '/images/gallery/gallery-2-original.webp',
+        thumbnail: '/images/gallery/gallery-2.webp',
+    },
+    {
+        original: '/images/gallery/gallery-3-original.webp',
+        thumbnail: '/images/gallery/gallery-3.webp',
+    },
+    {
+        original: '/images/gallery/gallery-4-original.webp',
+        thumbnail: '/images/gallery/gallery-4.webp',
+    },
+    {
+        original: '/images/gallery/gallery-5-original.webp',
+        thumbnail: '/images/gallery/gallery-5.webp',
+    },
+    {
+        original: '/images/gallery/gallery-6-original.webp',
+        thumbnail: '/images/gallery/gallery-6.webp',
+    },
 ]
 
 const getSize = () => {
@@ -24,6 +45,18 @@ const getSize = () => {
     }
 }
 
+const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: '80%',
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+}
+
 export default function Home() {
     const [windowSize, setWindowSize] = useState(getSize())
     const element = globalThis.document ? window : null
@@ -34,7 +67,23 @@ export default function Home() {
 
     useEventListener(element, 'resize', handleResize)
 
-    console.log(windowSize.innerWidth)
+    const [open, setOpen] = useState(false)
+
+    const handleClose = () => setOpen(false)
+
+    const handleOpen = () => setOpen(true)
+
+    const [activeIndex, setActiveIndex] = useState(0)
+
+    const [showContent, setShowContent] = useState(false)
+
+    useEffect(() => {
+        setShowContent(true)
+    }, [])
+
+    if (!showContent) {
+        return null
+    }
 
     return (
         <main className={classes.root}>
@@ -88,11 +137,20 @@ export default function Home() {
                 style={{
                     width: `${windowSize.innerWidth}px`,
                     height: `${(windowSize.innerWidth / 684) * 260}px`,
-                    backgroundColor: 'red',
+                    display: 'grid',
+                    gridTemplateColumns: 'auto auto auto',
                 }}
             >
-                {images.map((item, index) => (
-                    <div key={index}></div>
+                {galleryImages.map((item, index) => (
+                    <div
+                        key={index}
+                        onClick={() => {
+                            setActiveIndex(index)
+                            handleOpen()
+                        }}
+                    >
+                        <img src={item.thumbnail} />
+                    </div>
                 ))}
             </div>
             <section className={classes.subscribe}>
@@ -100,7 +158,42 @@ export default function Home() {
                 <p className={classes.subscribeText}>
                     Want to hear more? Enter your email below to hear from us!
                 </p>
+                <div className={classes.inputContainer}>
+                    <div className={classes.fieldContainer}>
+                        <TextField
+                            sx={{
+                                border: '1px solid rgb(191, 191, 191)',
+                            }}
+                            id="email-input"
+                            fullWidth
+                            hiddenLabel
+                            placeholder="Email Address"
+                            required
+                        />
+                    </div>
+                    <div className={classes.buttonContainer}>
+                        <div
+                            className={classes.contactButton}
+                            style={{ cursor: 'pointer' }}
+                        >
+                            Sign up
+                        </div>
+                    </div>
+                </div>
             </section>
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box sx={style}>
+                    <ImageGallery
+                        items={galleryImages}
+                        startIndex={activeIndex}
+                    />
+                </Box>
+            </Modal>
         </main>
     )
 }

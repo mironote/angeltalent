@@ -21,16 +21,28 @@
     margin-bottom: 40px;
 }
 
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 959px) {
+    .content {
+        flex-direction: column;
+    }
+}
 .contentLeft {
     padding: 0 10px;
     flex-basis: 66.66666666666666%;
     max-width: 66.66666666666666%;
 }
 
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+@media (max-width: 959px) {
+    .contentLeft {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
 }
 
 .subTitle {
@@ -47,6 +59,13 @@
     padding: 0 10px;
     flex-basis: 33.3333333333333%;
     max-width: 33.3333333333333%;
+}
+
+@media (max-width: 959px) {
+    .contentRight {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
 }
 
 .buttonContainer {

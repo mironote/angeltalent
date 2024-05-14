@@ -33,6 +33,16 @@
     max-width: 50%;
 }
 
+@media (max-width: 959px) {
+    .blockContainer {
+        flex-direction: column;
+    }
+    .block {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
 .blockTitle {
     color: rgb(27, 27, 27);
     margin-bottom: 24px;
