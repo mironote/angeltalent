@@ -3,9 +3,9 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "next dev -p 9527",
+        "dev": "next dev -p 80",
         "build": "next build",
-        "start": "next start -p 9527",
+        "start": "next start -p 80",
         "lint": "next lint",
         "start:pm2": "pm2 restart pm2.config.js"
     },
