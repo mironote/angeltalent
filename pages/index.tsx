@@ -102,26 +102,35 @@ const Page = () => {
                     </div>
                 </div>
                 <div className={classes.about}>
-                    <h2>ABOUT ISC</h2>
+                    <h2>ABOUT ANGELTALENT</h2>
                     <div className={classes.container}>
                         <div>
                             <h2>Our Experience</h2>
                             <p>
-                                Started in 2005, International Sourcing Company
-                                uses the owner's and employee's vast knowledge
-                                to create personal relationships in the business
-                                world.
+                                ANGELTALENT is based in Hongkong boasts an
+                                unparalleled understanding of the Chinese
+                                market. The company's founder, Angelina who is
+                                from mainland China and Graduated with major in
+                                international trade, the background and
+                                experience in the international hotel industry
+                                allow it to better combine communication with
+                                service and the concept of customer
+                                consideration.
                             </p>
                         </div>
 
                         <div>
                             <h2>Why Us?</h2>
                             <p>
-                                International Sourcing Company is based in St.
-                                Louis, Missouri and thrives to provide
+                                This unique blend of expertise and experience
+                                enables ANGELTALENT to seamlessly connect
+                                Chinese manufacturers with global markets,
+                                setting a benchmark for excellence in the
+                                trading industry. and thrives to provide
                                 businesses across the world with the products
-                                and services needed for success
+                                and services needed for success 
                             </p>
+
                             <div className={classes.buttonContainer}>
                                 <div className={classes.servicesButton}>
                                     <Link href={'/contact-us'}>

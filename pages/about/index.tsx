@@ -22,7 +22,7 @@ export default function About() {
                         className={classes.banner}
                         src="/images/about-banner.webp"
                     />
-                    <h1 className={classes.title}>ABOUT ISC</h1>
+                    <h1 className={classes.title}>ABOUT ANGELTALENT </h1>
                     <div className={classes.content}>
                         <div className={classes.contentLeft}>
                             <h2 className={classes.subTitle}>
@@ -30,190 +30,154 @@ export default function About() {
                             </h2>
                             <div className={classes.contentText}>
                                 <p>
-                                    <span>
-                                        <span>
-                                            Management Services Division
-                                        </span>{' '}
-                                        - International Sourcing Company's
-                                        Management Services Division will
-                                        provide management and consulting
-                                        services for our client's product and/or
-                                        service offerings within the Central and
-                                        Southern Illinois, Indiana, Kansas,
-                                        Missouri, Northern Arkansas, and
-                                        Northern Western Kentucky markets.
-                                        Additionally, we will assist small to
-                                        medium size business organizations
-                                        market and sell their product offerings
-                                        through a variety of channels. The
-                                        market entry channels could be the
-                                        Internet, big box retailers, and/or food
-                                        industry retailers such as grocery
-                                        stores, food processors, and convenient
-                                        stores operations. This business unit
-                                        will focus its efforts on providing
-                                        exceptional brand management, marketing
-                                        analysis, and selling services to meet
-                                        our client's needs. This business unit
-                                        could join forces with our E-Business
-                                        partners and/or our Strategic Sourcing
-                                        Division to offer a complete one-stop
-                                        resource service package to enable a new
-                                        startup or a longstanding entity to gain
-                                        valuable assistance. More importantly,
-                                        International Sourcing Company will be
-                                        able to tailor a service package that
-                                        specifically meets our client's needs to
-                                        expand and maximize their potential.
-                                        This segment will utilize the most
-                                        up-to-date market intelligence to assist
-                                        our clients in making informed strategic
-                                        business decision. The fee schedule for
-                                        these services can be addressed through
-                                        a variety of creative solutions to meet
-                                        your company's unique business needs.
-                                    </span>
+                                    At ANGELTALENT We offer a one-stop shop for
+                                    all commercial products sourcing. While most
+                                    supply companies use the services of a
+                                    retailer, distributor, stock product
+                                    supplier, overseas trading firms and
+                                    factories, we combine all of that into one.
                                 </p>
                                 <p>
-                                    <span>
-                                        <br />
-                                    </span>
+                                    The result is a more simplified and
+                                    cost-effective 'factory-direct' service –
+                                    with more value to you.
                                 </p>
                                 <p>
-                                    <span>
-                                        <span>Strategic Sourcing</span> -
-                                        International Sourcing Company Strategic
-                                        Sourcing Division provides strategic
-                                        sourcing solutions that can achieve
-                                        quality standards and logistical
-                                        requirements of even the toughest of
-                                        conditions. Our team can handle the
-                                        business development and procurement
-                                        activities from start to finish. Our
-                                        team has cultivated relationships with
-                                        over 200+ manufacturers worldwide and
-                                        can utilize these relationships to
-                                        mitigate challenges to yield successful
-                                        procurement strategies to implement for
-                                        your organization. These long-standing
-                                        relationships forged by our team will
-                                        yield quality control standards that
-                                        will meet or exceed your organization's
-                                        quality assurance initiatives.
-                                        Furthermore, our team will visit any
-                                        plant around the globe unannounced to
-                                        ensure our client's quality standards
-                                        are consistently and accurately being
-                                        achieved. Our team's international
-                                        sourcing experience is comprehensive and
-                                        grounded in sound financial metrics that
-                                        enhance the financial performance of our
-                                        clients.
-                                    </span>
+                                    we specialize in sourcing high-quality
+                                    products from around the globe to meet your
+                                    specific needs. Whether you're a small
+                                    business looking to expand your product line
+                                    or a large corporation seeking
+                                    cost-effective sourcing solutions, we are
+                                    here to help.
                                 </p>
-                                <p>
-                                    <span>
-                                        Our team can assist your organization in
-                                        the following ways:
-                                    </span>
+
+                                <p className={classes.boldTitle}>
+                                    Our Services:
                                 </p>
-                                <p></p>
+
                                 <ul>
                                     <li>
-                                        We can find low cost providers in any
-                                        area of the world to produce your
-                                        product offerings per your
-                                        specifications;
+                                        <span className={classes.bold}>
+                                            Product Sourcing:
+                                        </span>
+                                        With our extensive network of suppliers
+                                        and manufacturers, we can find the
+                                        perfect products for your business, no
+                                        matter how niche or specialized. We
+                                        research and identify potential
+                                        suppliers based on their client's
+                                        requirements, industry expertise and
+                                        market knowledge. We have a database of
+                                        reliable suppliers and maintain
+                                        relationships with them. In evaluating
+                                        these suppliers, we often conduct site
+                                        visits, interviews, and background
+                                        checks to ensure the suppliers meet the
+                                        client's standards.{' '}
                                     </li>
                                     <li>
-                                        We can perform blind quality audits at
-                                        any location around the globe at
-                                        intervals per your specifications;
+                                        <span className={classes.bold}>
+                                            Quality Assurance:
+                                        </span>{' '}
+                                        We understand the importance of quality
+                                        control. That's why we meticulously vet
+                                        each supplier to ensure that the
+                                        products you receive meet the highest
+                                        standards. We inspect the manufacturing
+                                        facilities, perform sample testing and
+                                        implement quality assurance processes to
+                                        ensure consistency and reliability.{' '}
                                     </li>
                                     <li>
-                                        We can assist in creating and
-                                        articulating your project specifications
-                                        and characteristics in local languages
-                                        to ensure nothing is lost in
-                                        translation;
+                                        Negotiation and contracting: We
+                                        negotiate with suppliers on behalf of
+                                        our clients to secure favorable terms,
+                                        prices and contracts.{' '}
                                     </li>
                                     <li>
-                                        We can manage the cultural differences
-                                        that result in international business
-                                        transactions due to the lack of
-                                        knowledge about local business
-                                        practices;
+                                        We utilize our industry knowledge and
+                                        bargaining power to achieve the best
+                                        possible agreements.{' '}
                                     </li>
                                     <li>
-                                        We can assist in mitigating cost
-                                        overruns associated with international
-                                        business transactions;
+                                        <span className={classes.bold}>
+                                            Logistics and Shipping:
+                                        </span>{' '}
+                                        From arranging transportation to
+                                        managing customs clearance, our
+                                        logistics partner ensures that your
+                                        products are delivered to your doorstep
+                                        on time and in pristine condition.
                                     </li>
                                     <li>
-                                        We can leverage our team's international
-                                        business knowledge and company resources
-                                        to yield positive financial results for
-                                        your organization.
+                                        <span className={classes.bold}>
+                                            Custom Solutions:
+                                        </span>{' '}
+                                        Every business is unique, which is why
+                                        we offer customized sourcing solutions
+                                        tailored to your specific requirements
+                                        and budget. monitor and manage the
+                                        overall supply chain to optimise
+                                        efficiency, minimise risks and enhance
+                                        cost-effectiveness.
                                     </li>
                                 </ul>
-                                <p></p>
-                                <p>
-                                    <span>
-                                        <br />
-                                    </span>
+
+                                <p className={classes.boldTitle}>
+                                    Why Choose Us:
                                 </p>
-                                <p>
-                                    <span>
-                                        <span>
-                                            International Business Services
+
+                                <ul>
+                                    <li>
+                                        <span className={classes.bold}>
+                                            Experience:
                                         </span>{' '}
-                                        - International Sourcing Company's
-                                        International Business Services Division
-                                        is focused on assisting our client's
-                                        with their interests abroad. This could
-                                        be the creation of a expansion strategy
-                                        to gain foreign market entry, analysis
-                                        of foreign modes of expansion,
-                                        determining economic viability of target
-                                        countries, and providing unbiased
-                                        opinions on political stability of
-                                        target countries for the client's
-                                        proposed activities. If you are in
-                                        search of unique product offerings from
-                                        around the globe, our team of
-                                        professionals can assist you in
-                                        identifying product offerings that meet
-                                        your organization's core competencies to
-                                        import and offer to your client base.
-                                        Conversely, if you seek to export your
-                                        product offerings to clients around the
-                                        globe, our team of professionals can
-                                        assist your efforts of navigating the
-                                        complicated process associated with
-                                        international business transactions. Our
-                                        team is ready to provide world-class
-                                        service and sound business strategies
-                                        focused on achieving your organizational
-                                        objectives while providing positive
-                                        returns on investment from start to
-                                        finish.
-                                    </span>
+                                        With years of experience in the sourcing
+                                        industry, we have the expertise and
+                                        knowledge to navigate the complexities
+                                        of global supply chains.
+                                    </li>
+                                    <li>
+                                        <span className={classes.bold}>
+                                            Reliability:
+                                        </span>{' '}
+                                        You can count on us to deliver results.
+                                        We pride ourselves on our reliability
+                                        and commitment to customer satisfaction.
+                                    </li>
+                                    <li>
+                                        <span className={classes.bold}>
+                                            Transparency:
+                                        </span>{' '}
+                                        We believe in transparent communication
+                                        every step of the way. You'll always
+                                        know where your products are and when to
+                                        expect them.
+                                    </li>
+                                    <li>
+                                        <span className={classes.bold}>
+                                            Cost-Effectiveness:
+                                        </span>{' '}
+                                        Our efficient sourcing processes and
+                                        strong supplier relationships enable us
+                                        to offer competitive pricing without
+                                        compromising on quality.
+                                    </li>
+                                </ul>
+
+                                <p className={classes.boldTitle}>
+                                    Get Started Today:
                                 </p>
-                            </div>
-                        </div>
-                        <div className={classes.contentRight}>
-                            <h2 className={classes.subTitle}>Learn More</h2>
-                            <div className={classes.contentText}>
-                                Our ramp up process is designed to empower your
-                                team and outfit them with the tools they need to
-                                succeed. Talk to us today about how we can
-                                support your growth, limit your turnover, and
-                                put you on a solid track to success and profit.
-                            </div>
-                            <div className={classes.buttonContainer}>
-                                <div className={classes.contactButton}>
-                                    <Link href={'/contact-us'}>Contact us</Link>
-                                </div>
+                                <p>
+                                    Ready to streamline your sourcing process
+                                    and take your business to the next level?
+                                    Contact us today to discuss your needs and
+                                    discover how [Company Name] can help you
+                                    achieve your goals. Let us be your trusted
+                                    sourcing partner.
+                                </p>
+                                <p>Your Success Starts Here.</p>
                             </div>
                         </div>
                     </div>

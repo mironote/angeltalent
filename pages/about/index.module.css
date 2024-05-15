@@ -114,3 +114,15 @@
     background-color: rgb(216, 204, 200);
     color: rgb(22, 22, 22);
 }
+
+.boldTitle {
+    font-weight: 700;
+    color: black;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.bold {
+    font-weight: 700;
+    color: black;
+}

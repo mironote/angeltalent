@@ -36,9 +36,10 @@ export default function Services() {
                                 src="/images/services-2.webp"
                             />
                             <div className={classes.blockContent}>
-                                ISC uses their vast qualifications to assist our
-                                clients with management services, strategic
-                                sourcing and international business interests
+                                ANGELTALENT uses their vast qualifications to
+                                assist our clients with management services,
+                                strategic sourcing and international business
+                                interests
                             </div>
                             <div className={classes.buttonContainer}>
                                 <div className={classes.contactButton}>
