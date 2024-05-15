@@ -4,6 +4,8 @@
 }
 
 .copyright {
-    composes: text-center text-gray from global;
-    composes: px-16 from global;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(169, 169, 169);
+    padding: 0 40px;
 }

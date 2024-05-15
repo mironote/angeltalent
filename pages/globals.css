@@ -17,7 +17,7 @@
 }
 
 body {
-    composes: text-sans from global;
+    font-family: Quicksand, sans-serif;
 }
 
 @layer utilities {

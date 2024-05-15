@@ -1,7 +1,6 @@
 import classes from './index.module.css'
 
 const Footer = () => {
-    console.log(classes.root)
     return (
         <div className={classes.root}>
             <p className={classes.copyright}>

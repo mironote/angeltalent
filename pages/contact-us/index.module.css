@@ -41,3 +41,14 @@
 .submitButton:hover {
     background-color: rgb(216, 204, 200);
 }
+
+@media (max-width: 959px) {
+    .buttonContainer,
+    .submitButton {
+        width: 100%;
+    }
+    .submitButton {
+        display: flex;
+        justify-content: center;
+    }
+}

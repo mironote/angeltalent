@@ -1,17 +1,28 @@
-.subscribe {
-    composes: bg-dark from global;
+.root {
     padding: 56px 0;
 }
+
+.banner img {
+    max-width: 100%;
+}
+
+.subscribe {
+    background-color: rgb(22, 22, 22);
+    padding: 56px 24px;
+}
 .subscribeTitle {
-    composes: text-center text-lg text-sans from global;
+    text-align: center;
+    font-family: Quicksand, sans-serif;
     color: rgb(216, 204, 200);
-    font-size: 28px;
+    font-size: 24px;
     padding-bottom: 16px;
     font-family: Quicksand, sans-serif;
 }
 
 .subscribeText {
-    composes: text-center text-sans from global;
+    text-align: center;
+    font-family: Quicksand, sans-serif;
+
     margin-bottom: 16px;
     color: rgb(164, 164, 164);
     line-height: 1.5;
@@ -25,10 +36,11 @@
     justify-content: center;
     background-color: rgb(22, 22, 22);
     padding: 56px 0;
+    font-size: 16px;
 }
 
 .oneCompany p {
-    font-size: 38px;
+    font-size: 28px;
     color: rgb(216, 204, 200);
     font-family: 'Mulish', sans-serif;
     text-align: center;
@@ -36,6 +48,10 @@
 }
 
 @media (max-width: 959px) {
+    .oneCompany {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .oneCompany p {
         max-width: 90%;
     }
@@ -211,6 +227,21 @@
 @media (max-width: 959px) {
     .inputContainer {
         width: 90%;
+        flex-direction: column;
+    }
+
+    .fieldContainer {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    .buttonContainer,
+    .contactButton {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
     }
 }
 
