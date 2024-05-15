@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from 'next/link'
 import classes from './index.module.css'
 import Layout from '@/components/layout'
