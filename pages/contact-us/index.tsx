@@ -1,16 +1,65 @@
-import { Box, Button, TextField } from '@mui/material'
+'use client'
+
+import { Box, TextField } from '@mui/material'
 import classes from './index.module.css'
 import Layout from '@/components/layout'
+import { useCallback, useState } from 'react'
+import axios from 'axios'
 
 export default function ContactUs() {
+    const [contactData, setContactData] = useState({
+        name: '',
+        email: '',
+        businssName: '',
+        businessUrl: '',
+        city: '',
+        state: '',
+        zipcode: '',
+        content: '',
+    })
+
+    const onSubmit = useCallback(
+        (e: any) => {
+            e?.preventDefault()
+
+            if (!contactData.name || !contactData.email) {
+                alert('Name and email are requied!')
+                return
+            }
+            axios
+                .post('/api/email', contactData)
+                .then(function (response) {
+                    alert('We have received your message!')
+                    setContactData({
+                        name: '',
+                        email: '',
+                        businssName: '',
+                        businessUrl: '',
+                        city: '',
+                        state: '',
+                        zipcode: '',
+                        content: '',
+                    })
+                })
+                .catch(function (error) {
+                    console.log(error)
+                })
+        },
+        [contactData]
+    )
+
+    const handleChange = (e: any) => {
+        const { name, value } = e.target
+        setContactData({ ...contactData, [name]: value })
+    }
+
     return (
         <Layout>
             <div className={classes.root}>
                 <div className={classes.container}>
                     <h1 className={classes.title}>CONTACT US</h1>
-
                     <Box
-                        component="form"
+                        component={'form'}
                         sx={{
                             display: 'grid',
                             gridTemplateColumns: 'auto',
@@ -19,46 +68,75 @@ export default function ContactUs() {
                         }}
                         noValidate
                         autoComplete="off"
+                        action=""
+                        onSubmit={onSubmit}
                     >
                         <TextField
                             id="name-input"
                             fullWidth
                             label="Name"
+                            name="name"
+                            onChange={handleChange}
                             required
                         />
                         <TextField
                             id="email-input"
                             fullWidth
                             label="Email"
+                            name="email"
+                            onChange={handleChange}
                             required
                         />
                         <TextField
                             id="business-name-input"
                             fullWidth
                             label="Business name"
+                            name="businssName"
+                            onChange={handleChange}
                         />
                         <TextField
                             id="business-url-input"
                             fullWidth
                             label="Business URL"
+                            name="businessUrl"
+                            onChange={handleChange}
                         />
-                        <TextField id="city-input" fullWidth label="City" />
-                        <TextField id="state-input" fullWidth label="State" />
+                        <TextField
+                            id="city-input"
+                            fullWidth
+                            label="City"
+                            name="city"
+                            onChange={handleChange}
+                        />
+                        <TextField
+                            id="state-input"
+                            fullWidth
+                            label="State"
+                            name="state"
+                            onChange={handleChange}
+                        />
                         <TextField
                             id="zip-code-input"
                             fullWidth
                             label="Zip Code"
+                            name="zipcode"
+                            onChange={handleChange}
                         />
                         <TextField
                             id="content-input"
                             multiline
                             rows={4}
                             placeholder="Tell us a bit about your goals or questions so we can get started."
+                            name="content"
+                            onChange={handleChange}
                         />
                         <div className={classes.buttonContainer}>
-                            <div className={classes.submitButton}>
+                            <button
+                                type="submit"
+                                className={classes.submitButton}
+                            >
                                 -- Send --
-                            </div>
+                            </button>
                         </div>
                     </Box>
                 </div>

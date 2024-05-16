@@ -91,7 +91,7 @@ const Page = () => {
         <Layout>
             <div className={classes.root}>
                 <div className={classes.banner}>
-                    <img src="/images/home-banner.webp" />
+                    <img src="/images/home-banner.jpg" />
                 </div>
                 <div className={classes.oneCompany}>
                     <p>One Vision, One Mission, One Success</p>

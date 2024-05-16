@@ -33,7 +33,7 @@ export default function Services() {
                             <h2 className={classes.blockTitle}>Consulting</h2>
                             <img
                                 className={classes.blockImage}
-                                src="/images/services-2.webp"
+                                src="/images/services-2.jpeg"
                             />
                             <div className={classes.blockContent}>
                                 ANGELTALENT uses their vast qualifications to

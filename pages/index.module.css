@@ -2,9 +2,19 @@
     padding: 56px 0;
 }
 
+.banner {
+    overflow: hidden;
+}
 .banner img {
     max-width: 100%;
     width: 100%;
+}
+@media (max-width: 959px) {
+    .banner img {
+        max-width: fit-content;
+        width: 300%;
+        height: auto;
+    }
 }
 
 .subscribe {
