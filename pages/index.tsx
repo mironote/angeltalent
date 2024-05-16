@@ -94,7 +94,7 @@ const Page = () => {
                     <img src="/images/home-banner.webp" />
                 </div>
                 <div className={classes.oneCompany}>
-                    <p>One World, One Market, One Company</p>
+                    <p>One Vision, One Mission, One Success</p>
                     <div className={classes.buttonContainer}>
                         <div className={classes.contactButton}>
                             <Link href={'/contact-us'}>Contact us</Link>
@@ -105,17 +105,17 @@ const Page = () => {
                     <h2>ABOUT ANGELTALENT</h2>
                     <div className={classes.container}>
                         <div>
-                            <h2>Our Experience</h2>
+                            <h2>Our Stories</h2>
                             <p>
                                 ANGELTALENT is based in Hongkong boasts an
-                                unparalleled understanding of the Chinese
-                                market. The company's founder, Angelina who is
-                                from mainland China and Graduated with major in
-                                international trade, the background and
-                                experience in the international hotel industry
-                                allow it to better combine communication with
-                                service and the concept of customer
-                                consideration.
+                                unparalleled understanding of the Chinese and
+                                global market. The company's founder, Angelina
+                                who is from mainland China, graduated with a
+                                major in international trade and has extensive
+                                experience in high-end hospitality industries.
+                                Her background and expertise enable her to
+                                effectively combine communication, service, and
+                                business in the sourcing industry.
                             </p>
                         </div>
 
@@ -126,9 +126,9 @@ const Page = () => {
                                 enables ANGELTALENT to seamlessly connect
                                 Chinese manufacturers with global markets,
                                 setting a benchmark for excellence in the
-                                trading industry. and thrives to provide
-                                businesses across the world with the products
-                                and services needed for success 
+                                trading industry. Thrives to provide businesses
+                                across the world with the products and services
+                                needed for success.
                             </p>
 
                             <div className={classes.buttonContainer}>

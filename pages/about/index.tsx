@@ -22,7 +22,7 @@ export default function About() {
                         className={classes.banner}
                         src="/images/about-banner.webp"
                     />
-                    <h1 className={classes.title}>ABOUT ANGELTALENT </h1>
+                    <h1 className={classes.title}>ABOUT US </h1>
                     <div className={classes.content}>
                         <div className={classes.contentLeft}>
                             <h2 className={classes.subTitle}>
@@ -59,14 +59,14 @@ export default function About() {
                                 <ul>
                                     <li>
                                         <span className={classes.bold}>
-                                            Product Sourcing:
+                                            Product Sourcing:{' '}
                                         </span>
                                         With our extensive network of suppliers
                                         and manufacturers, we can find the
                                         perfect products for your business, no
                                         matter how niche or specialized. We
                                         research and identify potential
-                                        suppliers based on their client's
+                                        suppliers based on our client's
                                         requirements, industry expertise and
                                         market knowledge. We have a database of
                                         reliable suppliers and maintain
@@ -90,10 +90,12 @@ export default function About() {
                                         ensure consistency and reliability.{' '}
                                     </li>
                                     <li>
-                                        Negotiation and contracting: We
-                                        negotiate with suppliers on behalf of
-                                        our clients to secure favorable terms,
-                                        prices and contracts.{' '}
+                                        <span className={classes.bold}>
+                                            Negotiation and contracting:
+                                        </span>{' '}
+                                         We negotiate with suppliers on behalf
+                                        of our clients to secure favorable
+                                        terms, prices and contracts.{' '}
                                     </li>
                                     <li>
                                         We utilize our industry knowledge and
