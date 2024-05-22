@@ -38,3 +38,5 @@ next-env.d.ts
 password.md
 
 .next.zip
+
+public/email-list.txt
