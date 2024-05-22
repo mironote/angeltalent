@@ -21,13 +21,6 @@ export default function Services() {
                                 assist companies with receiving the products
                                 they need to succeed in today's market.
                             </div>
-                            <div className={classes.buttonContainer}>
-                                <div className={classes.contactButton}>
-                                    <Link href={'/about'}>
-                                        -- Find out more --
-                                    </Link>
-                                </div>
-                            </div>
                         </div>
                         <div className={classes.block}>
                             <h2 className={classes.blockTitle}>Consulting</h2>

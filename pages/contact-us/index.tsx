@@ -10,12 +10,10 @@ export default function ContactUs() {
     const [contactData, setContactData] = useState({
         name: '',
         email: '',
-        businssName: '',
-        businessUrl: '',
-        city: '',
-        state: '',
-        zipcode: '',
-        content: '',
+        phoneNumber: '',
+        company: '',
+        country: '',
+        subject: '',
     })
 
     const onSubmit = useCallback(
@@ -26,6 +24,10 @@ export default function ContactUs() {
                 alert('Name and email are requied!')
                 return
             }
+            if (!contactData.subject) {
+                alert('Subject is requied!')
+                return
+            }
             axios
                 .post('/api/email', contactData)
                 .then(function (response) {
@@ -33,12 +35,10 @@ export default function ContactUs() {
                     setContactData({
                         name: '',
                         email: '',
-                        businssName: '',
-                        businessUrl: '',
-                        city: '',
-                        state: '',
-                        zipcode: '',
-                        content: '',
+                        phoneNumber: '',
+                        company: '',
+                        country: '',
+                        subject: '',
                     })
                 })
                 .catch(function (error) {
@@ -74,7 +74,7 @@ export default function ContactUs() {
                         <TextField
                             id="name-input"
                             fullWidth
-                            label="Name"
+                            label="Full Name"
                             name="name"
                             onChange={handleChange}
                             required
@@ -82,52 +82,39 @@ export default function ContactUs() {
                         <TextField
                             id="email-input"
                             fullWidth
-                            label="Email"
+                            label="Email Address"
                             name="email"
                             onChange={handleChange}
                             required
                         />
                         <TextField
-                            id="business-name-input"
+                            id="phone-number-input"
                             fullWidth
-                            label="Business name"
-                            name="businssName"
+                            label="Phone Number"
+                            name="phoneNumber"
                             onChange={handleChange}
                         />
                         <TextField
-                            id="business-url-input"
+                            id="company-input"
                             fullWidth
-                            label="Business URL"
-                            name="businessUrl"
+                            label="Company Name"
+                            name="company"
                             onChange={handleChange}
                         />
                         <TextField
-                            id="city-input"
+                            id="country-input"
                             fullWidth
-                            label="City"
-                            name="city"
+                            label="Country"
+                            name="country"
                             onChange={handleChange}
                         />
+
                         <TextField
-                            id="state-input"
-                            fullWidth
-                            label="State"
-                            name="state"
-                            onChange={handleChange}
-                        />
-                        <TextField
-                            id="zip-code-input"
-                            fullWidth
-                            label="Zip Code"
-                            name="zipcode"
-                            onChange={handleChange}
-                        />
-                        <TextField
-                            id="content-input"
+                            id="subject-input"
                             multiline
                             rows={4}
-                            placeholder="Tell us a bit about your goals or questions so we can get started."
-                            name="content"
+                            placeholder="Subject*"
+                            name="subject"
                             onChange={handleChange}
                         />
                         <div className={classes.buttonContainer}>

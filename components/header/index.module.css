@@ -1,2 +1,15 @@
 .root {
 }
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+@media (max-width: 959px) {
+    .logo {
+        position: absolute;
+        left: calc(50% - 20px);
+    }
+}

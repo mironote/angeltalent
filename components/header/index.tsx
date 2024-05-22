@@ -17,6 +17,7 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
+import classes from './index.module.css'
 
 interface Props {
     /**
@@ -30,7 +31,7 @@ const drawerWidth = 240
 
 const navItems = [
     { title: 'Home', link: '/' },
-    { title: 'Contact Us', link: '/contact-us' },
+    { title: 'Contact', link: '/contact' },
     { title: 'Services', link: '/services' },
     { title: 'About', link: '/about' },
 ]
@@ -90,6 +91,10 @@ export default function DrawerAppBar(props: Props) {
                     >
                         <MenuIcon />
                     </IconButton>
+                    <img
+                        className={classes.logo}
+                        src="/images/angeltalent-logo.png"
+                    />
                     <Typography
                         variant="h6"
                         component="div"

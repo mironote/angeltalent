@@ -94,7 +94,8 @@ const Page = () => {
                     <img src="/images/home-banner.jpg" />
                 </div>
                 <div className={classes.oneCompany}>
-                    <p>One Vision, One Mission, One Success</p>
+                    <p>Your vision, our mission</p>
+                    <p>Your Success</p>
                     <div className={classes.buttonContainer}>
                         <div className={classes.contactButton}>
                             <Link href={'/contact-us'}>Contact us</Link>
@@ -107,37 +108,39 @@ const Page = () => {
                         <div>
                             <h2>Our Stories</h2>
                             <p>
-                                ANGELTALENT is based in Hongkong boasts an
-                                unparalleled understanding of the Chinese and
-                                global market. The company's founder, Angelina
-                                who is from mainland China, graduated with a
-                                major in international trade and has extensive
-                                experience in high-end hospitality industries.
-                                Her background and expertise enable her to
-                                effectively combine communication, service, and
-                                business in the sourcing industry.
+                                ANGELTALENT, headquartered in Hong Kong,
+                                possesses an unmatched insight into both the
+                                Chinese and global markets. The company was
+                                founded by Angelina, a mainland China native
+                                with a diverse background spanning China, Dubai,
+                                Switzerland, France, and Réunion Island. She
+                                majored in international trade and brings
+                                extensive experience from the high-end
+                                hospitality industry. This diverse experience
+                                equips Angelina and ANGELTALENT to deliver
+                                exceptional customer service, combining superior
+                                communication skills, personalized service, and
+                                business acumen to meet and exceed client
+                                expectations in the sourcing industry.
                             </p>
                         </div>
 
                         <div>
                             <h2>Why Us?</h2>
                             <p>
-                                This unique blend of expertise and experience
-                                enables ANGELTALENT to seamlessly connect
-                                Chinese manufacturers with global markets,
-                                setting a benchmark for excellence in the
-                                trading industry. Thrives to provide businesses
-                                across the world with the products and services
-                                needed for success.
+                                At ANGELTALENT, we stand out by offering a
+                                seamless bridge between Chinese manufacturers
+                                and global markets. Our deep understanding of
+                                both local and international landscapes allows
+                                us to provide customized solutions tailored to
+                                your needs. We are committed to excellence,
+                                ensuring top-quality products and exceptional
+                                customer service. With ANGELTALENT, you benefit
+                                from our extensive network, reliable sourcing,
+                                and a dedicated team focused on driving your
+                                business success. Choose us for a partnership
+                                that prioritizes your growth and satisfaction.
                             </p>
-
-                            <div className={classes.buttonContainer}>
-                                <div className={classes.servicesButton}>
-                                    <Link href={'/contact-us'}>
-                                        Find out more
-                                    </Link>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -162,35 +165,7 @@ const Page = () => {
                         </div>
                     ))}
                 </div>
-                <section className={classes.subscribe}>
-                    <h2 className={classes.subscribeTitle}>Subscribe</h2>
-                    <p className={classes.subscribeText}>
-                        Want to hear more? Enter your email below to hear from
-                        us!
-                    </p>
-                    <div className={classes.inputContainer}>
-                        <div className={classes.fieldContainer}>
-                            <TextField
-                                sx={{
-                                    border: '1px solid rgb(191, 191, 191)',
-                                }}
-                                id="email-input"
-                                fullWidth
-                                hiddenLabel
-                                placeholder="Email Address"
-                                required
-                            />
-                        </div>
-                        <div className={classes.buttonContainer}>
-                            <div
-                                className={classes.contactButton}
-                                style={{ cursor: 'pointer' }}
-                            >
-                                Sign up
-                            </div>
-                        </div>
-                    </div>
-                </section>
+
                 <Modal
                     open={open}
                     onClose={handleClose}
